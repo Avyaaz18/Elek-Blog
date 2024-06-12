@@ -16,13 +16,13 @@ Welcome to the **ElectroEnigma** GitHub repository! This project contains the co
 1. **Clone the Repository**: Use the command below to clone this repository to your local machine.
 
     ```bash
-    git clone https://github.com/yourusername/electronics-hub.git
+    git clone https://github.com/Avyaaz18/Elek-Blog.git
     ```
 
 2. **Navigate to the Directory**:
 
     ```bash
-    cd electronics-hub
+    cd Elek-Blog
     ```
 
 3. **Install Hugo**: If you haven't already, [install Hugo](https://gohugo.io/getting-started/installing/) on your machine.
@@ -38,9 +38,5 @@ Welcome to the **ElectroEnigma** GitHub repository! This project contains the co
 ## 🛠️ Contributing
 
 We welcome contributions from the community! If you have ideas for new tutorials, projects, or reviews, feel free to create a pull request or open an issue.
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as you like.
 
 ---

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Sound-Activated LED with Raspberry Pi - Electro Enigma</title><meta name="description" content="This is My New Hugo Site"><meta property="og:title" content="Sound-Activated LED with Raspberry Pi" />
+<meta property="og:description" content="Create a sound-activated LED project with a Raspberry Pi using simple components and Python code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/proj3/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-27T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="Sound-Activated LED with Raspberry Pi"/>
+<meta name="twitter:description" content="Create a sound-activated LED project with a Raspberry Pi using simple components and Python code."/>
+<meta name="application-name" content="FeelIt">
+<meta name="apple-mobile-web-app-title" content="FeelIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/proj3/" /><link rel="prev" href="http://example.org/rev2/" /><link rel="next" href="http://example.org/proj1/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Sound-Activated LED with Raspberry Pi",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/proj3\/"
+        },"genre": "posts","keywords": "Raspberry Pi, DIY Electronics, Proximity Sensor","wordcount":  453 ,
+        "url": "http:\/\/example.org\/proj3\/","datePublished": "2021-05-27T00:00:00+00:00","dateModified": "2021-05-27T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Avk"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i>  Posts </a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i> Tags </a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i> Categories </a><a class="menu-item" href="/categories/blog/"><i class='fa fa-pencil'></i> Blog </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i> Posts</a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i>Tags</a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i>Categories</a><a class="menu-item" href="/categories/blog/" title=""><i class='fa fa-pencil'></i>Blog</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i></a><div class="menu-item"><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">Sound-Activated LED with Raspberry Pi</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Avk</a></span>&nbsp;<span class="post-category">published in <a href="/categories/diy/"><i class="fa-regular fa-folder fa-fw"></i>DIY</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;453 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#sound-activated-led-with-raspberry-pi"><strong>Sound-Activated LED with Raspberry Pi</strong></a>
+      <ul>
+        <li><a href="#components-needed"><strong>Components Needed</strong></a></li>
+        <li><a href="#project-overview"><strong>Project Overview</strong></a></li>
+        <li><a href="#wiring-the-components"><strong>Wiring the Components</strong></a></li>
+        <li><a href="#the-code"><strong>The Code</strong></a></li>
+        <li><a href="#code-explanation"><strong>Code Explanation</strong></a></li>
+        <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+        <li><a href="#references"><strong>References:</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="sound-activated-led-with-raspberry-pi"><strong>Sound-Activated LED with Raspberry Pi</strong></h2>
+<p>Looking for an engaging DIY electronics project? This sound-activated LED project using a Raspberry Pi is perfect for beginners and enthusiasts alike. The LED lights up whenever the sound sensor detects a sound above a set threshold, like a clap or a voice. Let&rsquo;s dive in and create this fun and useful project!</p>
+<h3 id="components-needed"><strong>Components Needed</strong></h3>
+<ol>
+<li>Raspberry Pi (any model)</li>
+<li>Breadboard</li>
+<li>Male-Female Jumper Wires (5)</li>
+<li>Sound Sensor Module</li>
+<li>220Ω resistor</li>
+<li>LED (1)</li>
+</ol>
+<h3 id="project-overview"><strong>Project Overview</strong></h3>
+<p>The sound sensor module used in this project outputs a digital signal, making it easy to determine if the detected sound exceeds the set threshold. Adjust the threshold by rotating the trimmer potentiometer on the sensor module. Clockwise increases sensitivity; counterclockwise decreases it. Adjust the sensor&rsquo;s sensitivity if the LED does not respond to loud sounds.</p>
+<figure><img src="/images/proj21.png"
+         alt="setup"/>
+</figure>
+
+<h3 id="wiring-the-components"><strong>Wiring the Components</strong></h3>
+<p>The wiring for this project is straightforward:</p>
+<ol>
+<li><strong>Sound Sensor Module</strong>: Connect the VCC pin to 5V (Pin 04) on the Raspberry Pi, GND pin to GND (Pin 06), and the OUT pin to GPIO3 (Pin 05).</li>
+<li><strong>LED</strong>: Connect a 220Ω resistor in series with the LED&rsquo;s cathode (negative) pin, then connect the resistor to GND (Pin 09) on the Raspberry Pi. Connect the anode (positive) pin of the LED to GPIO4 (Pin 07).</li>
+</ol>
+<p>Remember to refer to a Raspberry Pi pinout guide to ensure correct connections.</p>
+<h3 id="the-code"><strong>The Code</strong></h3>
+<p>Open your preferred Python IDE on the Raspberry Pi (we&rsquo;ll use Thonny in this example). Here&rsquo;s the code to get started:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="k">as</span> <span class="nn">GPIO</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setwarnings</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BCM</span><span class="p">)</span>
+
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">pull_up_down</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PUD_DOWN</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">,</span> <span class="n">initial</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">sensor</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sensor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;No sound!&#34;</span><span class="p">)</span>
+        <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">sensor</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Sound detected!&#34;</span><span class="p">)</span>
+        <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="code-explanation"><strong>Code Explanation</strong></h3>
+<ol>
+<li><strong>Import the GPIO Module</strong>: This allows us to control GPIO devices with the Raspberry Pi.</li>
+<li><strong>Set Up GPIO Warnings and Mode</strong>: Disable warnings and set the pin numbering mode to BCM (Broadcom SOC channel).</li>
+<li><strong>Initialize Pins</strong>: Set GPIO pin 3 as an input (connected to the sound sensor) with a default pull-down resistor, and GPIO pin 4 as an output (connected to the LED).</li>
+<li><strong>Main Loop</strong>: Continuously check the sensor&rsquo;s input. If it detects sound (sends a HIGH signal), the LED turns on, and a message is printed. If no sound is detected, the LED remains off, and a different message is printed. The loop repeats every 100 milliseconds.</li>
+</ol>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>Congratulations! You&rsquo;ve just created a sound-activated LED using a Raspberry Pi. This simple yet fascinating project introduces you to the basics of working with sensors and LEDs, and it can be expanded for more complex applications. Happy making!</p>
+<h3 id="references"><strong>References:</strong></h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fa-solid fa-info-circle fa-fw"></i>Sources<i class="details-icon fa-solid fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ol>
+<li><a href="https://www.electorials.com/pi-project-005-raspberry-pi-sound-activated-led.html" target="_blank" rel="noopener noreffer">https://www.electorials.com/pi-project-005-raspberry-pi-sound-activated-led.html</a></li>
+<li><a href="https://www.raspberrypi.com/documentation/computers/getting-started.html#setting-up-your-raspberry-pi" target="_blank" rel="noopener noreffer">https://www.raspberrypi.com/documentation/computers/getting-started.html#setting-up-your-raspberry-pi</a></li>
+<li><a href="https://www.digikey.in/en/maker/projects/how-to-make-a-raspberry-pi-voice-activated-door-lock/77508022b7d64df0955fb793f04af5be" target="_blank" rel="noopener noreffer">https://www.digikey.in/en/maker/projects/how-to-make-a-raspberry-pi-voice-activated-door-lock/77508022b7d64df0955fb793f04af5be</a></li>
+</ol>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/raspberry-pi/">Raspberry Pi</a>
+                </span><span><a href="/tags/diy-electronics/">DIY Electronics</a>
+                </span><span><a href="/tags/proximity-sensor/">Proximity Sensor</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2021-05-27</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/proj3/" data-title="Sound-Activated LED with Raspberry Pi" data-via="avyaaz?t=DS3vjkjOKzMsD8XusPrIyg&amp;s=08" data-hashtags="Raspberry Pi,DIY Electronics,Proximity Sensor"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/proj3/" data-hashtag="Raspberry Pi"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/proj3/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/proj3/" data-title="Sound-Activated LED with Raspberry Pi" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Reddit" data-sharer="reddit" data-url="http://example.org/proj3/"><i class="fa-brands fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Evernote" data-sharer="evernote" data-url="http://example.org/proj3/" data-title="Sound-Activated LED with Raspberry Pi"><i class="fa-brands fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/rev2/" class="prev" rel="prev" title="A High-Performance NFC/HF RFID Reader IC"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/proj1/" class="next" rel="next" title="DIY: Arduino DHT Humidity Sensor Project">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/Avyaaz18/" target="_blank" rel="noopener noreffer" title="Avk 1.0.2"><i class="fas fa-bolt"></i> Avk</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/">Avk</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.2', { scope: '/' })
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Registered');
+        }, err => console.error('Electro Enigma\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fa-solid fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body></html>

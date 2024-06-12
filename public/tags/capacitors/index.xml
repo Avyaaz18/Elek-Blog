@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Capacitors - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/capacitors/</link>
+        <description>Capacitors - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Fri, 26 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/capacitors/" rel="self" type="application/rss+xml" /><item>
+    <title>A Beginner&#39;s Guide to Electronics- II</title>
+    <link>http://example.org/tut2/</link>
+    <pubDate>Fri, 26 May 2023 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/tut2/</guid>
+    <description><![CDATA[Unlock the mysteries of capacitors: types, applications, values, and workings.]]></description>
+</item>
+</channel>
+</rss>

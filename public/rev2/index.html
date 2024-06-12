@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>A High-Performance NFC/HF RFID Reader IC - Electro Enigma</title><meta name="description" content="This is My New Hugo Site"><meta property="og:title" content="A High-Performance NFC/HF RFID Reader IC" />
+<meta property="og:description" content="ST25R100: High-performance NFC/HF RFID reader IC for versatile and efficient applications." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/rev2/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-09T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="A High-Performance NFC/HF RFID Reader IC"/>
+<meta name="twitter:description" content="ST25R100: High-performance NFC/HF RFID reader IC for versatile and efficient applications."/>
+<meta name="application-name" content="FeelIt">
+<meta name="apple-mobile-web-app-title" content="FeelIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/rev2/" /><link rel="prev" href="http://example.org/rev1/" /><link rel="next" href="http://example.org/proj3/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "A High-Performance NFC/HF RFID Reader IC",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/rev2\/"
+        },"genre": "posts","keywords": "NFC reader, RFID reader, ST25R100","wordcount":  510 ,
+        "url": "http:\/\/example.org\/rev2\/","datePublished": "2020-03-09T00:00:00+00:00","dateModified": "2020-03-09T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Avk"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i>  Posts </a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i> Tags </a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i> Categories </a><a class="menu-item" href="/categories/blog/"><i class='fa fa-pencil'></i> Blog </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i> Posts</a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i>Tags</a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i>Categories</a><a class="menu-item" href="/categories/blog/" title=""><i class='fa fa-pencil'></i>Blog</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i></a><div class="menu-item"><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">A High-Performance NFC/HF RFID Reader IC</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Avk</a></span>&nbsp;<span class="post-category">published in <a href="/categories/reviews/"><i class="fa-regular fa-folder fa-fw"></i>Reviews</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-09">2020-03-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;510 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview-of-the-st25r100">Overview of the ST25R100</a>
+      <ul>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-the-st25r100-works">How the ST25R100 Works</a>
+      <ul>
+        <li><a href="#inductive-wake-up-mode">Inductive Wake-Up Mode</a></li>
+        <li><a href="#high-sensitivity-and-noise-suppression">High Sensitivity and Noise Suppression</a></li>
+        <li><a href="#advanced-analog-front-end-afe">Advanced Analog Front End (AFE)</a></li>
+      </ul>
+    </li>
+    <li><a href="#applications">Applications</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h1 id="discover-the-st25r100-a-high-performance-nfchf-rfid-reader-ic">Discover the ST25R100: A High-Performance NFC/HF RFID Reader IC</h1>
+<p>Unlock the potential of NFC technology with the ST25R100, a powerful NFC/HF RFID reader IC designed to deliver exceptional performance in a compact package. Whether you&rsquo;re working on consumer electronics or industrial applications, the ST25R100 provides the versatility and efficiency you need.</p>
+<h2 id="overview-of-the-st25r100">Overview of the ST25R100</h2>
+<p>The ST25R100 multipurpose NFC transceiver stands out with its advanced features packed into a small 4x4 mm 24-pin TQFN package. It’s optimized for NFC reader/writer mode, offering high output power and excellent read range, making it ideal for applications with small antennas. The IC is equipped with low power card detection (LPCD) technology, enhancing detection range in inductive wake-up mode and allowing the system to detect the approach or removal of tags efficiently.</p>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Operating Modes</strong>: Supports reader/writer mode.</li>
+<li><strong>RF Communication</strong>: Compatible with ISO14443A/B and ISO15693 standards, supporting NFC-A/B and NFC-V protocols.</li>
+<li><strong>Tag Compatibility</strong>: Works with NFC Forum T1T, T2T, T4T, and T5T tag types, as well as proprietary protocols like Kovio, CTS, B’.</li>
+<li><strong>Low Power Card Detection</strong>: Enhanced detection range in wake-up mode.</li>
+<li><strong>High Output Power</strong>: Dynamic power output (DPO) feature for better integration.</li>
+<li><strong>Antenna Flexibility</strong>: Connect up to two independent single-ended antennas.</li>
+<li><strong>Advanced Modulation and Gain Control</strong>: Adjustable ASK modulation depth and automatic gain control.</li>
+<li><strong>Integrated Regulators</strong>: Boost system PSRR for stable performance.</li>
+<li><strong>Antenna Characteristics Measurement</strong>: I/Q channels support for precise antenna performance analysis.</li>
+<li><strong>External Communication Interface</strong>: SPI interface up to 6 Mbit/s.</li>
+<li><strong>Wide Voltage Range</strong>: Operates from 2.7 to 5.5 V, with a peripheral communication supply range of 2.7 to 5.5 V.</li>
+</ul>
+<h2 id="how-the-st25r100-works">How the ST25R100 Works</h2>
+<h3 id="inductive-wake-up-mode">Inductive Wake-Up Mode</h3>
+<p>The ST25R100 excels in low power card detection, operating efficiently even in inductive wake-up mode. This feature enables the IC to detect the approach or removal of NFC tags without consuming significant power, making it perfect for battery-operated devices.</p>
+<h3 id="high-sensitivity-and-noise-suppression">High Sensitivity and Noise Suppression</h3>
+<p>Thanks to ST&rsquo;s noise suppression receiver (NSR) technology, the ST25R100 can successfully read tags even in noisy environments. This high sensitivity ensures reliable performance across various applications.</p>
+<h3 id="advanced-analog-front-end-afe">Advanced Analog Front End (AFE)</h3>
+<p>The integrated AFE and data framing system support NFC-A/B (ISO 14443A/B) and NFC-V (ISO 15693) protocols, enabling seamless communication with NFC-enabled devices like smartwatches and smartphones. The transparent mode of the AFE also allows the implementation of custom protocols.</p>
+<h2 id="applications">Applications</h2>
+<p>The ST25R100&rsquo;s versatility makes it suitable for a wide range of applications, including:</p>
+<ul>
+<li><strong>Consumer Electronics</strong>: Enhance user experience with NFC-enabled features in gadgets and smart devices.</li>
+<li><strong>Industrial Automation</strong>: Implement robust and efficient NFC solutions for industrial equipment and machinery.</li>
+<li><strong>Access Control Systems</strong>: Create secure and reliable access control systems using advanced NFC technology.</li>
+<li><strong>Healthcare Devices</strong>: Integrate NFC functionality for efficient data exchange in medical devices and equipment.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The <a href="/images/rev2.pdf" rel="">ST25R100 NFC/HF RFID reader IC</a> is a powerful and versatile solution for a variety of applications, offering high performance in a compact package. With its advanced features and robust design, it is the ideal choice for integrating NFC technology into your next project.</p>
+<p>For more information and to explore the possibilities with the ST25R100, visit <a href="https://www.st.com/content/st_com/en.html" target="_blank" rel="noopener noreffer">STMicroelectronics</a>.</p>
+<p><a href="https://www.st.com/en/nfc/st25r100.html" target="_blank" rel="noopener noreffer">https://www.st.com/en/nfc/st25r100.html</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/nfc-reader/">NFC reader</a>
+                </span><span><a href="/tags/rfid-reader/">RFID reader</a>
+                </span><span><a href="/tags/st25r100/">ST25R100</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2020-03-09</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/rev2/" data-title="A High-Performance NFC/HF RFID Reader IC" data-via="avyaaz?t=DS3vjkjOKzMsD8XusPrIyg&amp;s=08" data-hashtags="NFC reader,RFID reader,ST25R100"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/rev2/" data-hashtag="NFC reader"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/rev2/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/rev2/" data-title="A High-Performance NFC/HF RFID Reader IC" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Reddit" data-sharer="reddit" data-url="http://example.org/rev2/"><i class="fa-brands fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Evernote" data-sharer="evernote" data-url="http://example.org/rev2/" data-title="A High-Performance NFC/HF RFID Reader IC"><i class="fa-brands fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/rev1/" class="prev" rel="prev" title="Introducing the Advantech ECU-150 IoT Gateway"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/proj3/" class="next" rel="next" title="Sound-Activated LED with Raspberry Pi">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/Avyaaz18/" target="_blank" rel="noopener noreffer" title="Avk 1.0.2"><i class="fas fa-bolt"></i> Avk</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/">Avk</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.2', { scope: '/' })
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Registered');
+        }, err => console.error('Electro Enigma\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fa-solid fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body></html>

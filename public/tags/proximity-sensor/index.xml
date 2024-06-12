@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Proximity Sensor - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/proximity-sensor/</link>
+        <description>Proximity Sensor - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Sun, 30 May 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/proximity-sensor/" rel="self" type="application/rss+xml" /><item>
+    <title>ARDUINO INFRARED PROXIMITY SENSOR PROJECT</title>
+    <link>http://example.org/proj2/</link>
+    <pubDate>Sun, 30 May 2021 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/proj2/</guid>
+    <description><![CDATA[Build an Arduino Infrared Proximity Sensor project easily with few components.]]></description>
+</item>
+<item>
+    <title>DIY: Arduino DHT Humidity Sensor Project</title>
+    <link>http://example.org/proj1/</link>
+    <pubDate>Thu, 27 May 2021 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/proj1/</guid>
+    <description><![CDATA[Create a humidity and temperature monitor using Arduino and DHT22 sensor.]]></description>
+</item>
+<item>
+    <title>Sound-Activated LED with Raspberry Pi</title>
+    <link>http://example.org/proj3/</link>
+    <pubDate>Thu, 27 May 2021 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/proj3/</guid>
+    <description><![CDATA[Create a sound-activated LED project with a Raspberry Pi using simple components and Python code.]]></description>
+</item>
+</channel>
+</rss>

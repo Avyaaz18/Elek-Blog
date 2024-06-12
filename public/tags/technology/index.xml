@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Technology - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/technology/</link>
+        <description>Technology - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/technology/" rel="self" type="application/rss+xml" /><item>
+    <title>Introducing the Advantech ECU-150 IoT Gateway</title>
+    <link>http://example.org/rev1/</link>
+    <pubDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/rev1/</guid>
+    <description><![CDATA[Advantech ECU-150 Gateway: Powering IoT with connectivity, monitoring, and efficiency.]]></description>
+</item>
+</channel>
+</rss>

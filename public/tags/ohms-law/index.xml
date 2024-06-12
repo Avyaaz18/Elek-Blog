@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ohms Law - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/ohms-law/</link>
+        <description>Ohms Law - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Wed, 31 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/ohms-law/" rel="self" type="application/rss+xml" /><item>
+    <title>Understanding Ohm&#39;s Law</title>
+    <link>http://example.org/tut6/</link>
+    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/tut6/</guid>
+    <description><![CDATA[Crack the code of electricity: Ohm&rsquo;s Law demystified in easy steps.]]></description>
+</item>
+</channel>
+</rss>

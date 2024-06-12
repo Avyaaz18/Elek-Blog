@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ST25R100 - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/st25r100/</link>
+        <description>ST25R100 - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Mon, 09 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/st25r100/" rel="self" type="application/rss+xml" /><item>
+    <title>A High-Performance NFC/HF RFID Reader IC</title>
+    <link>http://example.org/rev2/</link>
+    <pubDate>Mon, 09 Mar 2020 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/rev2/</guid>
+    <description><![CDATA[ST25R100: High-performance NFC/HF RFID reader IC for versatile and efficient applications.]]></description>
+</item>
+</channel>
+</rss>

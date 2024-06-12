@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SoM - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/som/</link>
+        <description>SoM - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Sun, 26 May 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/som/" rel="self" type="application/rss+xml" /><item>
+    <title>Unveiling a Game Changer for Next-Gen Network &amp; Cloud Deployments</title>
+    <link>http://example.org/trend3/</link>
+    <pubDate>Sun, 26 May 2024 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/trend3/</guid>
+    <description><![CDATA[iWave Systems introduces iW-RainboW-G63M: AMD Versal Premium SoM revolutionizes network and cloud deployments.]]></description>
+</item>
+</channel>
+</rss>

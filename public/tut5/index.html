@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>A Beginner&#39;s Guide to Electronics- V - Electro Enigma</title><meta name="description" content="This is My New Hugo Site"><meta property="og:title" content="A Beginner&#39;s Guide to Electronics- V" />
+<meta property="og:description" content="Unlock the secrets of logic gates: simple guides for understanding digital circuits." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/tut5/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-29T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="A Beginner&#39;s Guide to Electronics- V"/>
+<meta name="twitter:description" content="Unlock the secrets of logic gates: simple guides for understanding digital circuits."/>
+<meta name="application-name" content="FeelIt">
+<meta name="apple-mobile-web-app-title" content="FeelIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/tut5/" /><link rel="prev" href="http://example.org/tut4/" /><link rel="next" href="http://example.org/tut6/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "A Beginner's Guide to Electronics- V",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/tut5\/"
+        },"genre": "posts","keywords": "Logic Gates, Electronics","wordcount":  239 ,
+        "url": "http:\/\/example.org\/tut5\/","datePublished": "2023-05-29T00:00:00+00:00","dateModified": "2023-05-29T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Avk"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i>  Posts </a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i> Tags </a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i> Categories </a><a class="menu-item" href="/categories/blog/"><i class='fa fa-pencil'></i> Blog </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i> Posts</a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i>Tags</a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i>Categories</a><a class="menu-item" href="/categories/blog/" title=""><i class='fa fa-pencil'></i>Blog</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i></a><div class="menu-item"><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">A Beginner&#39;s Guide to Electronics- V</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Avk</a></span>&nbsp;<span class="post-category">published in <a href="/categories/tutorials/"><i class="fa-regular fa-folder fa-fw"></i>Tutorials</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-29">2023-05-29</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;239 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;2 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#decoding-the-basics-logic-gateshttpswwwtutorialspointcomcomputer_logical_organizationlogic_gateshtm">Decoding the Basics: <a href="https://www.tutorialspoint.com/computer_logical_organization/logic_gates.htm">Logic Gates</a></a></li>
+        <li><a href="#conclusion-embrace-the-digital-frontier">Conclusion: Embrace the Digital Frontier</a></li>
+        <li><a href="#references"><strong>References:</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h1 id="unlocking-the-mysteries-of-logic-gates-a-dive-into-digital-electronics"><strong>Unlocking the Mysteries of Logic Gates: A Dive into Digital Electronics</strong></h1>
+<p>Welcome to the captivating realm of logic gates, where 1s and 0s dance to the rhythm of electronic logic. These fundamental components form the bedrock of digital electronics, enabling us to weave intricate circuits and bring digital dreams to life.</p>
+<h3 id="decoding-the-basics-logic-gateshttpswwwtutorialspointcomcomputer_logical_organizationlogic_gateshtm">Decoding the Basics: <a href="https://www.tutorialspoint.com/computer_logical_organization/logic_gates.htm" target="_blank" rel="noopener noreffer">Logic Gates</a></h3>
+<p>With each gate comes a unique truth table, mapping out the binary dance of inputs and outputs. Symbolic representations guide our journey, offering visual cues to the inner workings of these electronic marvels.</p>
+<table>
+<thead>
+<tr>
+<th>Logic Gate</th>
+<th>Expression</th>
+<th>Gate Image</th>
+<th>Truth Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AND</strong></td>
+<td><code>A · B</code></td>
+<td>
+<img src="../gates/and_gate.PNG" alt="AND Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>B</th><th>Output</th></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table> </details></td>
+</tr>
+<tr>
+<td><strong>OR</strong></td>
+<td><code>A + B</code></td>
+<td>
+<img src="../gates/or_gate.PNG" alt="OR Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>B</th><th>Output</th></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table> </details></td>
+</tr>
+<tr>
+<td><strong>NOT</strong></td>
+<td><code>~A</code></td>
+<td>
+<img src="../gates/not_gate.PNG" alt="NOT Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>Output</th></tr><tr><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td></tr></table> </details></td>
+</tr>
+<tr>
+<td><strong>NAND</strong></td>
+<td><code>~(A · B)</code></td>
+<td>
+<img src="../gates/NAND1.PNG" alt="NAND Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>B</th><th>Output</th></tr><tr><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table> </details></td>
+</tr>
+<tr>
+<td><strong>NOR</strong></td>
+<td><code>~(A + B)</code></td>
+<td>
+<img src="../gates/nor_gate.PNG" alt="NOR Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>B</th><th>Output</th></tr><tr><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table> </details></td>
+</tr>
+<tr>
+<td><strong>XOR</strong></td>
+<td><code>A ⊕ B</code></td>
+<td>
+<img src="../gates/xor.PNG" alt="XOR Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>B</th><th>Output</th></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table> </details></td>
+</tr>
+<tr>
+<td><strong>XNOR</strong></td>
+<td><code>~(A ⊕ B)</code></td>
+<td>
+<img src="../gates/xnor_gate.webp" alt="XNOR Gate" width="140" height="80">
+</td>
+<td><details> <summary>Truth Table</summary> <br> <table> <tr><th>A</th><th>B</th><th>Output</th></tr><tr><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table> </details></td>
+</tr>
+</tbody>
+</table>
+<!-- - **AND Gate**: The gatekeeper of conjunction, allowing passage only when both inputs signal agreement.
+- **OR Gate**: Embracing inclusivity, this gate grants entry if any input extends an invitation.
+- **NOT Gate**: The master of inversion, transforming 1s into 0s and vice versa with a flick of its digital wand.
+- **NAND Gate**: An AND gate with a rebellious streak, denying passage only when both inputs march in unison.
+- **NOR Gate**: The OR gate's alter ego, barring entry unless both inputs shy away from illumination.
+- **XOR Gate**: The gate of exclusivity, welcoming diversity and lighting the path when inputs dare to differ.
+- **XNOR Gate**: A beacon of equivalence, shining bright when inputs mirror each other in perfect symmetry. -->
+<!-- ### Unraveling the Truth: Truth Tables and Symbols -->
+<!-- ### Building Blocks of Innovation: Using Logic Gates in Circuits
+
+Armed with knowledge and curiosity, we venture into the realm of circuitry, where logic gates converge to form intricate patterns of connectivity. From simple latches to complex adders, the possibilities are endless as we harness the power of logic to craft digital symphonies. -->
+<!-- ### Choosing the Right Tools: Exploring IC Series
+
+In our quest for digital mastery, we encounter two stalwart IC series: the venerable 7400-series and the versatile 4000-series. Each chip holds the promise of logic gate abundance, offering a playground for experimentation and innovation. -->
+<h3 id="conclusion-embrace-the-digital-frontier">Conclusion: Embrace the Digital Frontier</h3>
+<p>As our journey through the world of logic gates draws to a close, let us embrace the boundless potential of digital electronics. With logic gates as our guiding stars, we navigate the vast expanse of digital landscapes, pushing the boundaries of creativity and ingenuity.</p>
+<p>So, fellow explorer, venture forth into the digital frontier, armed with the knowledge of logic gates and the spirit of innovation. For in this realm of 1s and 0s, the possibilities are as limitless as our imagination.</p>
+<p>Let the digital odyssey begin!</p>
+<h3 id="references"><strong>References:</strong></h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fa-solid fa-info-circle fa-fw"></i>Sources<i class="details-icon fa-solid fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ol>
+<li><a href="https://www.build-electronic-circuits.com/logic-gates/" target="_blank" rel="noopener noreffer">https://www.build-electronic-circuits.com/logic-gates/</a></li>
+<li><a href="https://www.javatpoint.com/logic-gates" target="_blank" rel="noopener noreffer">https://www.javatpoint.com/logic-gates</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/digital-logic/all" target="_blank" rel="noopener noreffer">https://learn.sparkfun.com/tutorials/digital-logic/all</a></li>
+</ol>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/logic-gates/">Logic Gates</a>
+                </span><span><a href="/tags/electronics/">Electronics</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2023-05-29</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/tut5/" data-title="A Beginner&#39;s Guide to Electronics- V" data-via="avyaaz?t=DS3vjkjOKzMsD8XusPrIyg&amp;s=08" data-hashtags="Logic Gates,Electronics"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/tut5/" data-hashtag="Logic Gates"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/tut5/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/tut5/" data-title="A Beginner&#39;s Guide to Electronics- V" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Reddit" data-sharer="reddit" data-url="http://example.org/tut5/"><i class="fa-brands fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Evernote" data-sharer="evernote" data-url="http://example.org/tut5/" data-title="A Beginner&#39;s Guide to Electronics- V"><i class="fa-brands fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/tut4/" class="prev" rel="prev" title="A Beginner&#39;s Guide to Electronics- IV"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/tut6/" class="next" rel="next" title="Understanding Ohm&#39;s Law">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/Avyaaz18/" target="_blank" rel="noopener noreffer" title="Avk 1.0.2"><i class="fas fa-bolt"></i> Avk</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/">Avk</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.2', { scope: '/' })
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Registered');
+        }, err => console.error('Electro Enigma\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fa-solid fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body></html>

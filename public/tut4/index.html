@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>A Beginner&#39;s Guide to Electronics- IV - Electro Enigma</title><meta name="description" content="This is My New Hugo Site"><meta property="og:title" content="A Beginner&#39;s Guide to Electronics- IV" />
+<meta property="og:description" content="Explore the basics of transistors with simple components and easy-to-understand explanations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/tut4/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-28T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="A Beginner&#39;s Guide to Electronics- IV"/>
+<meta name="twitter:description" content="Explore the basics of transistors with simple components and easy-to-understand explanations."/>
+<meta name="application-name" content="FeelIt">
+<meta name="apple-mobile-web-app-title" content="FeelIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/tut4/" /><link rel="prev" href="http://example.org/tut3/" /><link rel="next" href="http://example.org/tut5/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "A Beginner's Guide to Electronics- IV",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/tut4\/"
+        },"genre": "posts","keywords": "Transistors, Electronics","wordcount":  432 ,
+        "url": "http:\/\/example.org\/tut4\/","datePublished": "2023-05-28T00:00:00+00:00","dateModified": "2023-05-28T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Avk"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i>  Posts </a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i> Tags </a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i> Categories </a><a class="menu-item" href="/categories/blog/"><i class='fa fa-pencil'></i> Blog </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i> Posts</a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i>Tags</a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i>Categories</a><a class="menu-item" href="/categories/blog/" title=""><i class='fa fa-pencil'></i>Blog</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i></a><div class="menu-item"><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">A Beginner&#39;s Guide to Electronics- IV</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Avk</a></span>&nbsp;<span class="post-category">published in <a href="/categories/tutorials/"><i class="fa-regular fa-folder fa-fw"></i>Tutorials</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-28">2023-05-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;432 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#transistors-the-basics">Transistors: The Basics</a></li>
+        <li><a href="#understanding-the-bjt">Understanding the BJT:</a></li>
+        <li><a href="#the-mosfet--a-modern-twist">The MOSFET : A Modern Twist</a></li>
+        <li><a href="#crafting-circuits">Crafting Circuits:</a></li>
+        <li><a href="#conclusion">Conclusion:</a></li>
+        <li><a href="#references"><strong>References:</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p><strong>Unraveling the Mysteries of Transistors</strong></p>
+<p>Welcome aboard on a journey through the electrifying world of transistors! Whether you&rsquo;re a curious novice or a seasoned enthusiast, buckle up as we embark on a hands-on exploration of these remarkable electronic components.</p>
+<h3 id="transistors-the-basics">Transistors: The Basics</h3>
+<p>Picture this: a component that functions as an electronic switch, seamlessly toggling current flow on and off without any moving parts. That&rsquo;s the magic of a transistor! Think of it as a relay&rsquo;s sleek, modern cousin, offering versatility and efficiency in a compact package.</p>
+<p>At the heart of our transistor adventure are two main types: the venerable Bipolar Junction Transistor (BJT) and its contemporary counterpart, the Metal-Oxide-Semiconductor Field-Effect Transistor (MOSFET).</p>
+<h3 id="understanding-the-bjt">Understanding the BJT:</h3>
+<p>Let&rsquo;s kick off our exploration with the classic NPN transistor. Armed with three distinctive legs – the base, collector, and emitter – it holds the key to controlling current flow in your circuits.</p>
+<figure><img src="/images/tut41.png"
+         alt="Transistor"/><figcaption>
+            <h4>Transistor</h4>
+        </figcaption>
+</figure>
+
+<p>When powered on, current surges from the collector to the emitter, lighting up pathways and energizing components. Conversely, in its off state, the transistor acts as a vigilant gatekeeper, halting the flow of electrons in their tracks.</p>
+<figure><img src="/images/tut42.png"
+         alt="Transistor1"/><figcaption>
+            <h4>Transistor</h4>
+        </figcaption>
+</figure>
+
+<p>But how do we coax this silent sentinel into action? Enter the base-to-emitter connection, akin to a diode&rsquo;s forward voltage grab. With a subtle nudge of around 0.7 volts, courtesy of a judiciously placed resistor, we awaken the transistor from its slumber, ushering in a new era of conductivity.</p>
+<!-- ### Cracking the Code: Choosing the Right Components
+
+Ah, the age-old question: what resistor value shall we choose for R1? Fear not, for Ohm's law shall be our guiding light! Armed with a battery's 9 volts and a dash of calculation prowess, we unveil the perfect resistor: 83 kΩ (or its trusty sibling, 82 kΩ).
+
+And let's not forget R2, the unsung hero regulating LED brilliance. A humble 1 kΩ resistor should suffice, ensuring our LED shines bright without overwhelming our transistor. -->
+<h3 id="the-mosfet--a-modern-twist">The MOSFET : A Modern Twist</h3>
+<p>But wait, there&rsquo;s more! Say hello to the MOSFET transistor, a sleek and sophisticated sibling to the BJT. With its gate, source, and drain, it promises a fresh perspective on current control.</p>
+<p>Unlike its BJT brethren, the MOSFET dances to a different tune, with gate-to-source voltage dictating its flow of electrons. To unlock its full potential, a voltage exceeding the threshold beckons, ushering forth a symphony of conductivity.</p>
+<h3 id="crafting-circuits">Crafting Circuits:</h3>
+<p>Armed with newfound knowledge, let&rsquo;s embark on a circuit-crafting escapade! From LED illuminations to speaker symphonies, the possibilities are endless. With a dash of creativity and a sprinkle of ingenuity, transistors become our faithful allies in the realm of electronics.</p>
+<h3 id="conclusion">Conclusion:</h3>
+<p>As our journey draws to a close, let us reflect on the awe-inspiring capabilities of transistors. From humble switches to potent amplifiers, these unassuming components shape the very fabric of modern technology.</p>
+<p>So, dear reader, embrace the power of transistors, for they are the building blocks of innovation and the gateway to a world limited only by your imagination.</p>
+<p>Keep experimenting, keep creating, and let the sparks of curiosity ignite your next electrifying adventure!</p>
+<h3 id="references"><strong>References:</strong></h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fa-solid fa-info-circle fa-fw"></i>Sources<i class="details-icon fa-solid fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ol>
+<li><a href="https://www.build-electronic-circuits.com/how-transistors-work/" target="_blank" rel="noopener noreffer">https://www.build-electronic-circuits.com/how-transistors-work/</a></li>
+<li><a href="https://www.techtarget.com/whatis/definition/transistor" target="_blank" rel="noopener noreffer">https://www.techtarget.com/whatis/definition/transistor</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/transistors/all" target="_blank" rel="noopener noreffer">https://learn.sparkfun.com/tutorials/transistors/all</a></li>
+</ol>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/transistors/">Transistors</a>
+                </span><span><a href="/tags/electronics/">Electronics</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2023-05-28</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/tut4/" data-title="A Beginner&#39;s Guide to Electronics- IV" data-via="avyaaz?t=DS3vjkjOKzMsD8XusPrIyg&amp;s=08" data-hashtags="Transistors,Electronics"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/tut4/" data-hashtag="Transistors"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/tut4/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/tut4/" data-title="A Beginner&#39;s Guide to Electronics- IV" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Reddit" data-sharer="reddit" data-url="http://example.org/tut4/"><i class="fa-brands fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Evernote" data-sharer="evernote" data-url="http://example.org/tut4/" data-title="A Beginner&#39;s Guide to Electronics- IV"><i class="fa-brands fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/tut3/" class="prev" rel="prev" title="A Beginner&#39;s Guide to Electronics- III"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/tut5/" class="next" rel="next" title="A Beginner&#39;s Guide to Electronics- V">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/Avyaaz18/" target="_blank" rel="noopener noreffer" title="Avk 1.0.2"><i class="fas fa-bolt"></i> Avk</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/">Avk</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.2', { scope: '/' })
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Registered');
+        }, err => console.error('Electro Enigma\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fa-solid fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body></html>

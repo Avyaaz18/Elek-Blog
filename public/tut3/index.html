@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>A Beginner&#39;s Guide to Electronics- III - Electro Enigma</title><meta name="description" content="This is My New Hugo Site"><meta property="og:title" content="A Beginner&#39;s Guide to Electronics- III" />
+<meta property="og:description" content="Discovering diodes: how they work, where they&rsquo;re used, and their types in electronics." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/tut3/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-27T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="A Beginner&#39;s Guide to Electronics- III"/>
+<meta name="twitter:description" content="Discovering diodes: how they work, where they&rsquo;re used, and their types in electronics."/>
+<meta name="application-name" content="FeelIt">
+<meta name="apple-mobile-web-app-title" content="FeelIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/tut3/" /><link rel="prev" href="http://example.org/tut2/" /><link rel="next" href="http://example.org/tut4/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "A Beginner's Guide to Electronics- III",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/tut3\/"
+        },"genre": "posts","keywords": "Diode, Electronics, Led","wordcount":  517 ,
+        "url": "http:\/\/example.org\/tut3\/","datePublished": "2023-05-27T00:00:00+00:00","dateModified": "2023-05-27T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Avk"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i>  Posts </a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i> Tags </a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i> Categories </a><a class="menu-item" href="/categories/blog/"><i class='fa fa-pencil'></i> Blog </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i> Posts</a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i>Tags</a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i>Categories</a><a class="menu-item" href="/categories/blog/" title=""><i class='fa fa-pencil'></i>Blog</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i></a><div class="menu-item"><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">A Beginner&#39;s Guide to Electronics- III</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Avk</a></span>&nbsp;<span class="post-category">published in <a href="/categories/tutorials/"><i class="fa-regular fa-folder fa-fw"></i>Tutorials</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-27">2023-05-27</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;517 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#understanding-diodes-a-beginners-guide-to-electronics">Understanding Diodes: A Beginner&rsquo;s Guide to Electronics</a>
+      <ul>
+        <li><a href="#what-is-a-diode">What is a Diode?</a>
+          <ul>
+            <li><a href="#how-to-connect-a-diode-in-a-circuit">How to Connect a Diode in a Circuit</a></li>
+          </ul>
+        </li>
+        <li><a href="#what-is-a-diode-used-for">What is a Diode Used For?</a></li>
+        <li><a href="#how-does-a-diode-work">How Does a Diode Work?</a></li>
+        <li><a href="#testing-diodes-with-a-multimeter">Testing Diodes with a Multimeter</a></li>
+        <li><a href="#things-to-note-about-diodes">Things to Note About Diodes</a></li>
+        <li><a href="#types-of-diodes">Types of Diodes</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references"><strong>References:</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="understanding-diodes-a-beginners-guide-to-electronics">Understanding Diodes: A Beginner&rsquo;s Guide to Electronics</h2>
+<p>Have you ever wondered how electronic devices control the flow of electricity? Enter the diode – a fundamental component that plays a crucial role in countless electronic circuits. In this guide, we&rsquo;ll dive into the world of diodes, exploring their functions, applications, and how they work.</p>
+<h3 id="what-is-a-diode">What is a Diode?</h3>
+<p>At its core, a diode is a semiconductor device that allows current to flow in one direction while blocking it in the opposite direction. It consists of two terminals: the anode and the cathode. The diode symbol resembles an arrow pointing towards a line, with the line representing the cathode side.</p>
+<figure><img src="/images/tut31.webp"
+         alt="Diode"/><figcaption>
+            <h4>Diode</h4>
+        </figcaption>
+</figure>
+
+<h4 id="how-to-connect-a-diode-in-a-circuit">How to Connect a Diode in a Circuit</h4>
+<p>Connecting a diode in a circuit is straightforward. When placed in the correct direction, current flows through the diode, enabling it to perform its intended function. However, if connected in reverse, the diode blocks the flow of current.</p>
+<table>
+<thead>
+<tr>
+<th>Image 1</th>
+<th>Image 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/tut32.png"
+        data-srcset="/images/tut32.png, /images/tut32.png 1.5x, /images/tut32.png 2x"
+        data-sizes="auto"
+        alt=""
+        title="Image 1" /></td>
+<td><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/tut33.png"
+        data-srcset="/images/tut33.png, /images/tut33.png 1.5x, /images/tut33.png 2x"
+        data-sizes="auto"
+        alt=""
+        title="Image 2" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-is-a-diode-used-for">What is a Diode Used For?</h3>
+<p>Diodes find applications in a wide range of electronic circuits, serving various purposes:</p>
+<ul>
+<li>
+<p><strong>Sound Effects Clipping</strong>: By employing diodes in parallel in opposite directions, they create clipping effects, producing overdrive sound effects used in guitar pedals.</p>
+</li>
+<li>
+<p><strong>Converting AC to DC</strong>: Diodes are crucial in converting alternating current (AC) to direct current (DC). Rectifier diodes, arranged in a bridge configuration, facilitate this conversion in power supplies.</p>
+</li>
+<li>
+<p><strong>Protection from Voltage Spikes</strong>: Diodes safeguard sensitive components from voltage spikes by allowing excess current to bypass them.</p>
+</li>
+</ul>
+<h3 id="how-does-a-diode-work">How Does a Diode Work?</h3>
+<p>A diode operates based on the principle of a PN junction, formed by combining positively and negatively doped semiconductor materials. At this junction, a depletion region emerges, acting as an insulator that prevents current flow.</p>
+<p>When a positive voltage is applied across the diode, from the anode to the cathode, the depletion region shrinks, enabling current flow. Conversely, applying voltage in the opposite direction expands the depletion region, blocking current flow.</p>
+<h3 id="testing-diodes-with-a-multimeter">Testing Diodes with a Multimeter</h3>
+<p>Multimeters equipped with a diode function allow you to test diodes and measure their forward voltage. By connecting the positive test lead to the anode and the negative test lead to the cathode, you can determine the forward voltage of the diode.</p>
+<h3 id="things-to-note-about-diodes">Things to Note About Diodes</h3>
+<ul>
+<li>Diodes require a minimum voltage in the forward direction to conduct.</li>
+<li>They have current limitations and exhibit leakage current in the reverse direction.</li>
+<li>Applying excessive reverse voltage can cause diodes to break down.</li>
+</ul>
+<h3 id="types-of-diodes">Types of Diodes</h3>
+<p>Diodes come in various types, each tailored to specific applications:</p>
+<ul>
+<li>Signal Diode</li>
+<li>Rectifier Diode</li>
+<li>Zener Diode</li>
+<li>Light-Emitting Diode (LED)</li>
+<li>Schottky Diode</li>
+<li>Photodiode</li>
+<li>PIN Diode</li>
+</ul>
+<p>Each type possesses unique characteristics suited to different tasks, from signal processing to light emission.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Diodes are essential components in electronic circuits, enabling precise control of current flow and facilitating a myriad of functions. Understanding their principles of operation and applications is key to mastering electronics. So, the next time you encounter a diode in a circuit diagram, you&rsquo;ll know its role and significance in the world of electronics. Happy experimenting!</p>
+<p>Keep exploring, keep learning!</p>
+<h3 id="references"><strong>References:</strong></h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fa-solid fa-info-circle fa-fw"></i>Sources<i class="details-icon fa-solid fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ol>
+<li><a href="https://www.build-electronic-circuits.com/what-is-a-diode/" target="_blank" rel="noopener noreffer">https://www.build-electronic-circuits.com/what-is-a-diode/</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/diodes" target="_blank" rel="noopener noreffer">https://learn.sparkfun.com/tutorials/diodes</a></li>
+<li><a href="https://www.tutorialspoint.com/basic_electronics/basic_electronics_diodes.htm" target="_blank" rel="noopener noreffer">https://www.tutorialspoint.com/basic_electronics/basic_electronics_diodes.htm</a></li>
+</ol>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/diode/">Diode</a>
+                </span><span><a href="/tags/electronics/">Electronics</a>
+                </span><span><a href="/tags/led/">Led</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2023-05-27</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/tut3/" data-title="A Beginner&#39;s Guide to Electronics- III" data-via="avyaaz?t=DS3vjkjOKzMsD8XusPrIyg&amp;s=08" data-hashtags="Diode,Electronics,Led"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/tut3/" data-hashtag="Diode"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/tut3/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/tut3/" data-title="A Beginner&#39;s Guide to Electronics- III" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Reddit" data-sharer="reddit" data-url="http://example.org/tut3/"><i class="fa-brands fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Evernote" data-sharer="evernote" data-url="http://example.org/tut3/" data-title="A Beginner&#39;s Guide to Electronics- III"><i class="fa-brands fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/tut2/" class="prev" rel="prev" title="A Beginner&#39;s Guide to Electronics- II"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/tut4/" class="next" rel="next" title="A Beginner&#39;s Guide to Electronics- IV">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/Avyaaz18/" target="_blank" rel="noopener noreffer" title="Avk 1.0.2"><i class="fas fa-bolt"></i> Avk</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/">Avk</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.2', { scope: '/' })
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Registered');
+        }, err => console.error('Electro Enigma\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fa-solid fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body></html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>DIY: Arduino DHT Humidity Sensor Project - Electro Enigma</title><meta name="description" content="This is My New Hugo Site"><meta property="og:title" content="DIY: Arduino DHT Humidity Sensor Project" />
+<meta property="og:description" content="Create a humidity and temperature monitor using Arduino and DHT22 sensor." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/proj1/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-27T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="DIY: Arduino DHT Humidity Sensor Project"/>
+<meta name="twitter:description" content="Create a humidity and temperature monitor using Arduino and DHT22 sensor."/>
+<meta name="application-name" content="FeelIt">
+<meta name="apple-mobile-web-app-title" content="FeelIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/proj1/" /><link rel="prev" href="http://example.org/proj3/" /><link rel="next" href="http://example.org/proj2/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "DIY: Arduino DHT Humidity Sensor Project",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/proj1\/"
+        },"genre": "posts","keywords": "Arduino, DIY Electronics, Proximity Sensor","wordcount":  852 ,
+        "url": "http:\/\/example.org\/proj1\/","datePublished": "2021-05-27T00:00:00+00:00","dateModified": "2021-05-27T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Avk"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i>  Posts </a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i> Tags </a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i> Categories </a><a class="menu-item" href="/categories/blog/"><i class='fa fa-pencil'></i> Blog </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Electro Enigma"><span class="header-title-pre"><i class='fas fa-bolt'></i></span>ElectroEnigma</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="View all posts"><i class='fa fa-file-alt'></i> Posts</a><a class="menu-item" href="/tags/" title="Explore posts by tags"><i class='fa fa-tags'></i>Tags</a><a class="menu-item" href="/categories/" title="Explore posts by categories"><i class='fa fa-folder'></i>Categories</a><a class="menu-item" href="/categories/blog/" title=""><i class='fa fa-pencil'></i>Blog</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/Avyaaz18/Elek-Blog" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fa-brands fa-github fa-fw'></i></a><div class="menu-item"><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">DIY: Arduino DHT Humidity Sensor Project</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Avk</a></span>&nbsp;<span class="post-category">published in <a href="/categories/diy/"><i class="fa-regular fa-folder fa-fw"></i>DIY</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;852 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;4 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#diy-arduino-dht-humidity-sensor-project"><strong>DIY: Arduino DHT Humidity Sensor Project</strong></a>
+      <ul>
+        <li><a href="#relative-humidity"><strong>Relative Humidity</strong></a></li>
+        <li><a href="#components-needed"><strong>Components Needed</strong></a></li>
+        <li><a href="#building-the-circuit"><strong>Building the Circuit</strong></a></li>
+        <li><a href="#the-code"><strong>The Code</strong></a></li>
+        <li><a href="#code-explanation"><strong>Code Explanation</strong></a></li>
+        <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+        <li><a href="#references"><strong>References:</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="diy-arduino-dht-humidity-sensor-project"><strong>DIY: Arduino DHT Humidity Sensor Project</strong></h2>
+<p>If you&rsquo;re interested in monitoring temperature and humidity, this Arduino project using the DHT22 sensor is perfect for you. Whether you&rsquo;re building a weather station, a clock, or a measurement device for a computer or car, this project will guide you through the setup and code needed to get accurate readings.</p>
+<h3 id="relative-humidity"><strong>Relative Humidity</strong></h3>
+<p>The relative humidity (RH) is a measure of the amount of moisture in the air compared to the maximum amount of moisture the air can hold at a specific temperature. It is expressed as a percentage.</p>
+<p>The formula to calculate relative humidity is:</p>
+<p>$$RH = \left(\frac{{\text{actual vapor pressure}}}{{\text{saturation vapor pressure}}}\right) \times 100%$$</p>
+<p>where:</p>
+<ul>
+<li>$RH$: Relative Humidity (in percentage)</li>
+<li>Actual vapor pressure: The pressure exerted by the water vapor present in the air.</li>
+<li>Saturation vapor pressure: The maximum pressure exerted by water vapor at a given temperature. It represents the point where the air is saturated with moisture.</li>
+</ul>
+<h3 id="components-needed"><strong>Components Needed</strong></h3>
+<ol>
+<li>Arduino (Keyestudio Uno used in this example)</li>
+<li>DHT22/AM2302 Humidity and Temperature Sensor</li>
+<li>3 Jumper Wires</li>
+<li>10KΩ resistor</li>
+<li>Breadboard</li>
+<li>USB Data Cable (depends on the Arduino model)</li>
+</ol>
+<!-- <div style="display: flex; justify-content: space-around;">
+  <div>
+    <img src="/images/proj3.jpg" alt="board" style="width: 75%;">
+  </div>
+  <div>
+    <img src="/images/proj31.jpg" alt="schematic" style="width: 100%;">
+  </div>
+</div> -->
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/proj3.jpg"
+        data-srcset="/images/proj3.jpg, /images/proj3.jpg 1.5x, /images/proj3.jpg 2x"
+        data-sizes="auto"
+        alt=""
+        title="board" /></th>
+<th style="text-align:center"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/proj31.jpg"
+        data-srcset="/images/proj31.jpg, /images/proj31.jpg 1.5x, /images/proj31.jpg 2x"
+        data-sizes="auto"
+        alt=""
+        title="schematic" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Board</td>
+<td style="text-align:center">Schematic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="building-the-circuit"><strong>Building the Circuit</strong></h3>
+<p>The circuit is simple and quick to assemble on a breadboard. Here are the steps:</p>
+<ol>
+<li><strong>Remove Power</strong>: Ensure the Arduino is powered off before starting.</li>
+<li><strong>Insert Sensor</strong>: Fit the DHT22 sensor vertically across four separate rows on the breadboard.</li>
+<li><strong>Connect Pins</strong>:
+<ul>
+<li>Pin 1 (VCC) to 5V on the Arduino</li>
+<li>Pin 2 (DATA) to digital pin 2 on the Arduino</li>
+<li>Pin 4 (GND) to Ground on the Arduino</li>
+</ul>
+</li>
+<li><strong>Add Resistor</strong>: Place a 10KΩ resistor between Pin 1 (VCC) and Pin 2 (DATA) on the sensor.</li>
+</ol>
+<p>That&rsquo;s all for the hardware setup!</p>
+<h3 id="the-code"><strong>The Code</strong></h3>
+<p>We&rsquo;ll use the DHTtester example from Adafruit&rsquo;s DHT sensor library, which supports DHT11, DHT21, and DHT22 sensors. You can download the library from <a href="https://github.com/adafruit/DHT-sensor-library" target="_blank" rel="noopener noreffer">Adafruit&rsquo;s GitHub page</a>. Once downloaded, open the Arduino IDE and use the following code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-arduino" data-lang="arduino"><span class="c1">// Example testing sketch for various DHT humidity/temperature sensors
+</span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&#34;DHT.h&#34;</span><span class="cp">
+</span><span class="cp">#define DHTPIN 2     </span><span class="c1">// what digital pin we&#39;re connected to
+</span><span class="c1"></span>
+<span class="c1">// Uncomment whatever type you&#39;re using!
+</span><span class="c1"></span>
+<span class="c1">//#define DHTTYPE DHT11   // DHT 11
+</span><span class="c1"></span>
+<span class="c1">//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+</span><span class="c1"></span>
+<span class="c1">//#define DHTTYPE DHT21   // DHT 21 (AM2301)
+</span><span class="c1"></span>
+<span class="c1">// Connect pin 1 (on the left) of the sensor to +5V
+</span><span class="c1"></span>
+<span class="c1">// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
+</span><span class="c1">// to 3.3V instead of 5V!
+</span><span class="c1"></span>
+<span class="c1">// Connect pin 2 of the sensor to whatever your DHTPIN is
+</span><span class="c1">// Connect pin 4 (on the right) of the sensor to GROUND
+</span><span class="c1">// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+</span><span class="c1"></span>
+<span class="c1">// Initialize DHT sensor.
+</span><span class="c1"></span>
+<span class="c1">// Note that older versions of this library took an optional third parameter to
+</span><span class="c1">// tweak the timings for faster processors.  This parameter is no longer needed
+</span><span class="c1">// as the current DHT reading algorithm adjusts itself to work on faster procs.
+</span><span class="c1"></span>
+<span class="n">DHT</span> <span class="nf">dht</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span> <span class="n">DHTTYPE</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&#34;DHTxx test!&#34;</span><span class="p">);</span>
+  <span class="n">dht</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Wait a few seconds between measurements.
+</span><span class="c1"></span>  <span class="nf">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+  <span class="c1">// Reading temperature or humidity takes about 250 milliseconds!
+</span><span class="c1"></span>  <span class="c1">// Sensor readings may also be up to 2 seconds &#39;old&#39; (its a very slow sensor)
+</span><span class="c1"></span>  <span class="kt">float</span> <span class="n">h</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
+  <span class="c1">// Read temperature as Celsius (the default)
+</span><span class="c1"></span>  <span class="kt">float</span> <span class="n">t</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="nf">readTemperature</span><span class="p">();</span>
+  <span class="c1">// Read temperature as Fahrenheit (isFahrenheit = true)
+</span><span class="c1"></span>  <span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="nf">readTemperature</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+  <span class="c1">// Check if any reads failed and exit early (to try again).
+</span><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="nf">isnan</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">||</span> <span class="nf">isnan</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">||</span> <span class="nf">isnan</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nc">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&#34;Failed to read from DHT sensor!&#34;</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c1">// Compute heat index in Fahrenheit (the default)
+</span><span class="c1"></span>  <span class="kt">float</span> <span class="n">hif</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="n">computeHeatIndex</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">h</span><span class="p">);</span>
+  <span class="c1">// Compute heat index in Celsius (isFahreheit = false)
+</span><span class="c1"></span>  <span class="kt">float</span> <span class="n">hic</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="n">computeHeatIndex</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34;Humidity: &#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34; %</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34;Temperature: &#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34; *C &#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">f</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34; *F</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34;    Heat index: &#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">hic</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&#34; *C &#34;</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">hif</span><span class="p">);</span>
+  <span class="nc">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&#34; *F&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="code-explanation"><strong>Code Explanation</strong></h3>
+<ol>
+<li><strong>Library Import</strong>: The code begins by including the DHT sensor library.</li>
+<li><strong>Define Pins</strong>: It defines the data pin and the type of DHT sensor being used.</li>
+<li><strong>Setup</strong>: In the <code>setup</code> function, the code initializes serial communication at 9600 baud rate and starts the DHT sensor.</li>
+<li><strong>Loop</strong>: The <code>loop</code> function runs continuously, waiting for 2 seconds between each reading. It reads humidity and temperature from the sensor, calculates the heat index, and prints the results to the serial monitor.</li>
+</ol>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>You&rsquo;ve now set up a simple yet effective humidity and temperature sensor using an Arduino and a DHT22 sensor. This project is a great starting point for creating more complex systems like weather stations or environmental monitors. With minimal components and straightforward code, you&rsquo;ll have accurate readings displayed on your serial monitor in no time. Happy tinkering!</p>
+<h3 id="references"><strong>References:</strong></h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fa-solid fa-info-circle fa-fw"></i>Sources<i class="details-icon fa-solid fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ol>
+<li><a href="https://www.electorials.com/project-005-arduino-dht-humidity-sensor-project.html" target="_blank" rel="noopener noreffer">https://www.electorials.com/project-005-arduino-dht-humidity-sensor-project.html</a></li>
+<li><a href="https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf" target="_blank" rel="noopener noreffer">https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf</a></li>
+<li><a href="https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/" target="_blank" rel="noopener noreffer">https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/</a></li>
+</ol>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/arduino/">Arduino</a>
+                </span><span><a href="/tags/diy-electronics/">DIY Electronics</a>
+                </span><span><a href="/tags/proximity-sensor/">Proximity Sensor</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2021-05-27</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/proj1/" data-title="DIY: Arduino DHT Humidity Sensor Project" data-via="avyaaz?t=DS3vjkjOKzMsD8XusPrIyg&amp;s=08" data-hashtags="Arduino,DIY Electronics,Proximity Sensor"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/proj1/" data-hashtag="Arduino"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/proj1/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/proj1/" data-title="DIY: Arduino DHT Humidity Sensor Project" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Reddit" data-sharer="reddit" data-url="http://example.org/proj1/"><i class="fa-brands fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Evernote" data-sharer="evernote" data-url="http://example.org/proj1/" data-title="DIY: Arduino DHT Humidity Sensor Project"><i class="fa-brands fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/proj3/" class="prev" rel="prev" title="Sound-Activated LED with Raspberry Pi"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/proj2/" class="next" rel="next" title="ARDUINO INFRARED PROXIMITY SENSOR PROJECT">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/Avyaaz18/" target="_blank" rel="noopener noreffer" title="Avk 1.0.2"><i class="fas fa-bolt"></i> Avk</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/">Avk</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.2', { scope: '/' })
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Registered');
+        }, err => console.error('Electro Enigma\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Electro Enigma\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fa-solid fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body></html>

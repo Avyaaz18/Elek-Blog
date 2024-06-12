@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Microchip - Tag - Electro Enigma</title>
+        <link>http://example.org/tags/microchip/</link>
+        <description>Microchip - Tag - Electro Enigma</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>avk50261@gmail.com (Avk)</managingEditor>
+            <webMaster>avk50261@gmail.com (Avk)</webMaster><lastBuildDate>Wed, 29 May 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/microchip/" rel="self" type="application/rss+xml" /><item>
+    <title>Microchip Unveils Groundbreaking DC-DC Converter for Space Applications</title>
+    <link>http://example.org/trend1/</link>
+    <pubDate>Wed, 29 May 2024 00:00:00 &#43;0000</pubDate><author>avk50261@gmail.com (Avk)</author><guid>http://example.org/trend1/</guid>
+    <description><![CDATA[Microchip introduces LE50-28 series: radiation-tolerant DC-DC converters for versatile satellite applications.]]></description>
+</item>
+</channel>
+</rss>

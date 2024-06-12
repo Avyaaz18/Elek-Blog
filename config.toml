@@ -41,7 +41,7 @@ theme = "FeelIt"
     pre = "<i class='fa fa-pencil'></i>"
     post = ""
     name = "Blog"
-    url = "/categories/blog/"
+    url = "/Elek-Blog/categories/blog/"
     title = ""
     weight = 4
   [[menu.main]]

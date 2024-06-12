@@ -36,7 +36,6 @@ theme = "FeelIt"
     url = "/categories/"
     title = "Explore posts by categories"
     weight = 3
-
   [[menu.main]]
     identifier = "blog"
     pre = "<i class='fa fa-pencil'></i>"

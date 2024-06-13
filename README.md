@@ -2,7 +2,7 @@
 
 # ⚡ ElectroEnigma: Hugo Static Website
 
-Welcome to the **ElectroEnigma** GitHub repository! This project contains the code for a Hugo-based static website dedicated to electronics enthusiasts. Our site offers a wealth of information including the latest news, easy-to-follow tutorials, engaging DIY projects, and insightful product reviews.
+Welcome to the **ElectroEnigma** GitHub repository! This project contains the code for a Hugo-based static website dedicated to electronics. Site offers various information including the latest news, easy-to-follow tutorials, engaging DIY projects, and insightful product reviews.
 
 ## 🌟 Features
 

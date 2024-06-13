@@ -37,6 +37,6 @@ Welcome to the **ElectroEnigma** GitHub repository! This project contains the co
 
 ## 🛠️ Contributing
 
-We welcome contributions from the community! If you have ideas for new tutorials, projects, or reviews, feel free to create a pull request or open an issue.
+I welcome contributions from the community! If you have ideas for new tutorials, projects, or reviews, feel free to create a pull request or open an issue.
 
 ---

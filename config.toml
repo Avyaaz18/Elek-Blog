@@ -197,9 +197,9 @@ theme = "FeelIt"
       title = "Name"
       desc = "Avyaaz"
     [[params.about.status]]
-      faIcon = "fa-solid fa-briefcase fa-fw"
-      title = "Occupation"
-      desc = "Freelancer"
+      faIcon = "fa-solid fa-school fa-fw"
+      title = "Student"
+      desc = "IITH"
     [[params.about.status]]
       title = "Location"
       faIcon = "fa-solid fa-map-marker-alt"
